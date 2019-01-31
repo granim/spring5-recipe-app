@@ -1,36 +1,32 @@
 package guru.springframework.domain;
 
 import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
 import java.math.BigDecimal;
 
 @Entity
 public class UnitOfMeasure {
 
-    BigDecimal cups;
-    BigDecimal Tb;
-    BigDecimal tsp;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private long id;
+    private String description;
 
-    public BigDecimal getCups() {
-        return cups;
+    public long getId() {
+        return id;
     }
 
-    public void setCups(BigDecimal cups) {
-        this.cups = cups;
+    public void setId(long id) {
+        this.id = id;
     }
 
-    public BigDecimal getTb() {
-        return Tb;
+    public String getDescription() {
+        return description;
     }
 
-    public void setTb(BigDecimal tb) {
-        Tb = tb;
-    }
-
-    public BigDecimal getTsp() {
-        return tsp;
-    }
-
-    public void setTsp(BigDecimal tsp) {
-        this.tsp = tsp;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }

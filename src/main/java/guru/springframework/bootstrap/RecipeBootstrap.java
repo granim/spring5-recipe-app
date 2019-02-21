@@ -3,7 +3,7 @@ package guru.springframework.bootstrap;
 import guru.springframework.domain.*;
 import guru.springframework.repositories.CategoryRepository;
 import guru.springframework.repositories.RecipeRepository;
-import guru.springframework.repositories.UnitOfMeasureRepositry;
+import guru.springframework.repositories.UnitOfMeasureRepository;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.context.ApplicationListener;
 import org.springframework.context.event.ContextRefreshedEvent;
@@ -20,9 +20,9 @@ import java.util.Optional;
 
         private final CategoryRepository categoryRepository;
         private final RecipeRepository recipeRepository;
-        private final UnitOfMeasureRepositry unitOfMeasureRepository;
+        private final UnitOfMeasureRepository unitOfMeasureRepository;
 
-        public RecipeBootstrap(CategoryRepository categoryRepository, RecipeRepository recipeRepository, UnitOfMeasureRepositry unitOfMeasureRepository) {
+        public RecipeBootstrap(CategoryRepository categoryRepository, RecipeRepository recipeRepository, UnitOfMeasureRepository unitOfMeasureRepository) {
             this.categoryRepository = categoryRepository;
             this.recipeRepository = recipeRepository;
             this.unitOfMeasureRepository = unitOfMeasureRepository;

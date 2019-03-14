@@ -36,8 +36,6 @@ public class RecipeServiceImpl implements RecipeService {
         return recipeSet;
     }
 
-
-
     @Override
     public Recipe findById(Long l) {
 
@@ -70,8 +68,6 @@ public class RecipeServiceImpl implements RecipeService {
     public void deleteById(Long idToDelete) {
         recipeRepository.deleteById(idToDelete);
     }
-
-
 
 
 }

@@ -50,7 +50,7 @@ public class IngredientControllerTest {
                 .andExpect(status().isOk())
                 .andExpect(view().name("recipe/ingredient/list"))
                 .andExpect(model().attributeExists("recipe"));
-         //then
+        //then
         verify(recipeService, times(1)).findCommandById(anyLong());
 
     }
@@ -67,8 +67,8 @@ public class IngredientControllerTest {
                 .andExpect(view().name("recipe/ingredient/show"))
                 .andExpect(model().attributeExists("ingredient"));
 
-        }
-
-
     }
+
+
+}
 

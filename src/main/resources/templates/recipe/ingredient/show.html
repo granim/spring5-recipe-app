@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
 <head>
     <meta charset="UTF-8"/>
     <title>View Ingredient</title>
@@ -45,7 +45,9 @@
                             </tr>
                             <tr>
                                 <td th:text="${ingredient.id}">334</td>
-                                <td th:text="${ingredient.amount} + ' ' + ${ingredient.uom.getDescription()} + ' ' + ${ingredient.description}">Tasty Goodnees 3</td>
+                                <td th:text="${ingredient.amount} + ' ' + ${ingredient.uom.getDescription()} + ' ' + ${ingredient.description}">
+                                    Tasty Goodnees 3
+                                </td>
                             </tr>
                         </table>
                     </div>

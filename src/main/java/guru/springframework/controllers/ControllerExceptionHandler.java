@@ -20,6 +20,6 @@ public class ControllerExceptionHandler {
         modelAndView.addObject("exception", exception);
         exception.getMessage();
         return modelAndView;
-        
+
     }
 }
